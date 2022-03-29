@@ -1,0 +1,24 @@
+S3 bucket access to specific user
+Below is the JSON format you just need to copy ARN of that S3 bucket
+Create a IAM policy and write this JSON file and save. Later you can use it in IAM role or IAM
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket"
+      ],
+      "Resource": "arn:aws:s3:::dk-bucket"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject",
+        "s3:GetObject"
+      ],
+      "Resource": "arn:aws:s3:::dk-bucket/*"
+    }
+  ]
+}
