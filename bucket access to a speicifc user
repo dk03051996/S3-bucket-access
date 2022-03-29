@@ -22,3 +22,8 @@ Create a IAM policy and write this JSON file and save. Later you can use it in I
     }
   ]
 }
+
+
+
+https://aws.amazon.com/premiumsupport/knowledge-center/s3-console-access-certain-bucket/
+Use the above link for future reference
